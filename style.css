@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --font-titulo: "Passion One", sans-serif; 
+    --font-texto: "Sriracha", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font-titulo);
+    font-variant: small-caps;
+    font-size: 11em;
+    padding-top: 50px;
+}
+
+header p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    padding: 50px;
+}
+
+a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section 
+{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font-texto);
+    font-size: 65px;
+}
+
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.imagem1, .imagem2 {
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.495);
+}
+
+.imagem1 {
+    background-image: url(imagens/background001.jpg);
+}
+
+main .imagem1, main .imagem2{
+    color: white;
+    background-color: darkgray;
+    box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.543);
+}
+
+.imagem1 p, .imagem2 p {
+    display: inline-block;
+    line-height: 2em;
+    background-color: rgba(0, 0, 0, 0.311);
+    text-shadow: 1px 1px black;
+}
+
+.imagem2 {
+    background-image: url(imagens/background002.jpg);
+}
+
+.imagem2 p {
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p 
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 1020px) 
+{
+
+    header h1 
+    {
+        font-size: 4em;
+    }
+
+    p 
+    {
+        font-size: 30px;
+        line-height: 2.2em;
+    }
+
+    section 
+    {
+        padding: 5vh 0 15vh 30px;
+        font-size: 50px;
+    }
+
+    .imagem1, .imagem2 
+    {
+        background-position: center center;
+    }
+
+    .imagem1 p, .imagem2 p 
+    {
+        padding: 10vh 0 15vh 30px;
+    }
+
+    footer p 
+    {
+        font-size: 1em;
+    }
+}
